@@ -1,0 +1,25 @@
+###
+POST http://localhost:3000/appi/users HTTP/1.1
+Content-Type: application/json
+
+{
+"nombre":"matias123",
+"edad":50,
+"email":"matiascuevas@gmail.com"
+}
+###
+GET  http://localhost:3000/appi/users/662a6af89d757d43a26ce0f8 HTTP/1.1
+###
+GET  http://localhost:3000/appi/users/6629cb853cdca164204eaa2f HTTP/1.1
+###
+PUT  http://localhost:3000/appi/users/662a6af89d757d43a26ce0f8 HTTP/1.1
+Content-Type: application/json
+
+{
+"nombre":"pedro00",
+"edad":800,
+"email":"matiascuevas123@gmail.com"
+}
+
+###
+DELETE  http://localhost:3000/appi/users/ HTTP/1.1
